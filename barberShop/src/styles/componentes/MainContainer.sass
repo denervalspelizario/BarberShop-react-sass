@@ -1,0 +1,53 @@
+@use '../mixins'
+@use '../variables'
+
+.main__container
+    margin: 100px auto
+    text-align: center 
+    width: 1024px   
+
+    h2
+        font-size: 2rem
+    .main__text--bold
+        font-weight: bold
+        padding: 1.5rem 0
+
+    .main__text--style
+        font-family: variables.$font-styles
+        color: variables.$border-menu    
+        font-size: 3rem
+        margin: 2rem
+
+    .container__services
+        display: flex
+        justify-content: center
+
+
+        .card__services
+            width: 250px
+            height: 300px
+            border: 1px solid variables.$color-dark
+            padding: 20px 0
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px
+
+            &:hover
+                border: 2px solid variables.$border-menu
+                
+                h3
+                    color: variables.$border-menu
+
+                p
+                    color: variables.$border-menu    
+                    
+
+
+            img
+                width: 200px
+                height: 150px
+                
+                
+            h3
+                font-size: 1.5rem    
+
+                
+                    
