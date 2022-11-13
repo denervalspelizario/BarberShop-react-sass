@@ -1,20 +1,14 @@
 
 @use '../styles/variables'
 
-@mixin hover-menu
-    .nav__menu
-        position: absolute
-        top: 50%
-        left: 50%
-        -webkit-transform: translate(-50%, -50%)
-        transform: translate(-50%, -50%)
-        a
-            -webkit-transition: all 0.2s ease-in-out
-            transition: all 0.2s ease-in-out
-
-            &:hover
-                color: variables.$border-menu        
-    
+@mixin banner-text
+    text-align: center
+    font-size: 5rem
+    position: relative
+    top: 120px
+    text-shadow: 3px 3px #3f3f3f
+    color: variables.$color-light
+    font-family: variables.$font-styles
 
 
 @mixin mobile

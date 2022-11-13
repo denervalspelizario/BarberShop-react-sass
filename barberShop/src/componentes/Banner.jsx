@@ -3,8 +3,8 @@ import '../styles/componentes/Banner.sass'
 
 function Banner()  {
   return (
-    <header className='header__container'>
-        <h1>Banner</h1>
+    <header className='banner__container'>
+        <h1>BarberShop</h1>
     </header>
   )
 }
