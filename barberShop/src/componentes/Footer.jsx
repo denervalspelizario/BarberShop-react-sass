@@ -6,14 +6,16 @@ function Footer()  {
   return (
     <footer>
       <div className='footer__container'>
-        <img  className='footer__logo' src="assets/barbearia-logo.png" alt="logo barbearia"  title='BarberShop'/>
+        <img  className='footer__logo' src="/img/barbearia-logo.png" alt="logo barbearia"  title='BarberShop'/>
         <div className='footer__info'>
-          <div className="footer__info--icons">
+          <h3>Endereço</h3> 
+          <div className="footer__info--icons" >
             <i class="fa-solid fa-location-dot"></i>
-            <h3>Endereço</h3> 
+            <div className='footer__end'>
+              <p>Av. Bernadino de campos, 98</p> 
+              <p>São Paulo, SP 12345-678</p> 
+            </div>       
           </div>
-          <p>Av. Bernadino de campos, 98</p> 
-          <p>São Paulo, SP 12345-678</p>  
         </div>
         <div className='footer__info'>
           <h3>Contato</h3> 

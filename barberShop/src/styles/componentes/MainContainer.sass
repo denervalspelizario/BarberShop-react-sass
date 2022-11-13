@@ -24,22 +24,21 @@
 
 
         .card__services
-            width: 250px
-            height: 300px
-            border: 1px solid variables.$color-dark
-            padding: 20px 0
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px
+            @include mixins.card-style
+            cursor: pointer
+            
 
+            
             &:hover
-                border: 2px solid variables.$border-menu
+                border: 1px solid variables.$border-menu
                 
                 h3
                     color: variables.$border-menu
+                    transition: .3s
 
                 p
-                    color: variables.$border-menu    
-                    
-
+                    color: variables.$border-menu           
+                    transition: .3s
 
             img
                 width: 200px
@@ -47,7 +46,9 @@
                 
                 
             h3
-                font-size: 1.5rem    
+                margin-top: 1rem
+                font-size: 2rem   
+                font-family: variables.$font-styles 
 
                 
                     
