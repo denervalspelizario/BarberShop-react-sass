@@ -4,7 +4,13 @@ import '../styles/componentes/Header.sass'
 function Header()  {
   return (
     <header className='header__container'>
-        <h1>header</h1>
+        <nav>
+          <img src="/img/barbearia-logo.png" alt=""  className='image__logo'/>
+          <button type='submit' className='button__theme'>
+            <img src="/img/moon.png" alt="" />
+            <p>Dark</p>
+          </button>
+        </nav>
     </header>
   )
 }
