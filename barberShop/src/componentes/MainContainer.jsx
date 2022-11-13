@@ -10,11 +10,23 @@ function MainContainer()  {
           de estilo. Deixe nosso barbeiro ser seu estilista pessoal e você nunca ficará desapontado 
         </p>
         <p>S. Kelly</p>
-        <div className='container__image'>
-            <img src="/img/barba.jpg" alt="profissional aparando a barba do cliente"  title='BarberShop'/>
-            <img src="/img/cabelo.jpg" alt="profissional cortando cabelo do cliente" title='BarberShop'/>
-            <img src="/img/lavaseca.jpg" alt="profissional secando o cabelo do cliente" title='BarberShop'/>
-        </div>
+        <section className='container__services'>
+            <div className='card__services'>
+                <img src="/img/barba.jpg" alt="profissional aparando a barba do cliente"  title='BarberShop'/>
+                <h2>Barba</h2>
+                <p>R$50,00</p>
+            </div>
+            <div className='card__services'>
+                <img src="/img/cabelo.jpg" alt="profissional cortando cabelo do cliente" title='BarberShop'/>
+                <h2>Cabelo</h2>
+                <p>R$130,00</p>
+            </div>            
+            <div className='card__services'>
+                <img src="/img/lavaseca.jpg" alt="profissional secando o cabelo do cliente" title='BarberShop'/>
+                <h2>Barba + Cabelo</h2>
+                <p>R$180,00</p>
+            </div>         
+        </section>
     </article>
   )
 }

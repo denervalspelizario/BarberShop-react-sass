@@ -1,3 +1,52 @@
 @use '../mixins'
 @use '../variables'
 
+    
+.header__container
+    width: 1024px
+    display: flex 
+    justify-content: space-evenly
+
+    .image__logo
+        width: 7rem
+    
+    .nav__menu
+        padding-top: 1rem
+        
+        
+        ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-top: 1rem
+            
+            li
+                list-style: none
+                margin-left: 1.5rem
+
+
+                a
+                    text-decoration: none
+                    color: variables.$color-dark
+                    transition: 0.5s
+                    border-bottom: 2px solid transparent 
+                    &:hover
+                        color: variables.$border-menu
+                        border-bottom: 2px solid variables.$border-menu
+                        
+
+                .button__theme
+                    width: 5rem
+                    height: 2rem    
+                    border: 2px solid variables.$border-menu
+                    border-radius: 1.5rem
+                    cursor: pointer
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    
+                    .image__button
+                        width: 1.2rem
+                        height: 1.2rem     
+            

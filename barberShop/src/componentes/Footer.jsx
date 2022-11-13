@@ -19,7 +19,7 @@ function Footer()  {
           <h3>Contato</h3> 
           <div className="footer__info--icons">
             <i class="fa-solid fa-envelope"></i>
-            <p>gelateria@gelateria.com</p> 
+            <p>barbershop@barbershop.com</p> 
           </div>
           <div className="footer__info--icons footer__phone">
             <i class="fa-solid fa-phone"></i>
@@ -35,7 +35,7 @@ function Footer()  {
           </div>
         </div>
       </div>
-      <p className='footer__text'>Barbershop Orgulhosamente desenvolvida por "D S Pelizario"</p>
+      <p className='footer__text'>Barbershop desenvolvida por "D S Pelizario"</p>
     </footer>
   )
 }
