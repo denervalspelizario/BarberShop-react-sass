@@ -3,9 +3,9 @@ import '../styles/componentes/Banner.sass'
 
 function Banner()  {
   return (
-    <header className='banner__container'>
+    <section className='banner__container'>
         <h1>BarberShop</h1>
-    </header>
+    </section>
   )
 }
 
