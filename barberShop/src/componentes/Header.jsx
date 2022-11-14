@@ -5,7 +5,7 @@ function Header()  {
   return (
     <header>
         <div className='header__container'>
-            <img src="/img/barbearia-logo.png" alt=""  className='image__logo'/>
+            <img src="/img/barbearia-logo.png" alt="logo da barbershop" title='BarberShop' className='image__logo'/>
             <nav className='nav__menu'>
                 <ul>
                     <li><a href="#servicos">Sobre</a></li>

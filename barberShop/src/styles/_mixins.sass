@@ -1,6 +1,21 @@
 
 @use '../styles/variables'
 
+
+// header    
+@mixin hover-text
+    color: variables.$border-menu
+    border-bottom: 2px solid variables.$border-menu
+    transition: .6s
+
+@mixin collums
+    width: 100vw
+    flex-direction: column
+    justify-content: center
+    align-items: center  
+
+// banner
+
 @mixin banner-text
     text-align: center
     font-size: 5rem
@@ -10,6 +25,7 @@
     color: variables.$color-light
     font-family: variables.$font-styles
 
+//mainContainer    
 
 @mixin card-style
     width: 250px
@@ -23,7 +39,7 @@
 
 
 @mixin mobile
-    @media (max-width: 375px)
+    @media (max-width: 499px)
         @content                        
 
 // Tablet

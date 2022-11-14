@@ -7,33 +7,49 @@
     display: flex 
     justify-content: space-evenly
 
+    @include mixins.mobile
+        @include mixins.collums
+    @include mixins.tablet
+        width: 90vw
+    @include mixins.notepad    
+        width: 90vw
+
+
     .image__logo
         width: 7rem
+        @include mixins.mobile
+            width: 10rem
+
     
     .nav__menu
         padding-top: 1rem
         
+        @include mixins.mobile
+            border-top: 2px solid variables.$border-menu
+            padding-top: 0
+            padding-bottom: 0.5rem
+            width: 90vw
         
         ul
             display: flex
             justify-content: space-between
             align-items: center
             padding-top: 1rem
-            
+
             li
                 list-style: none
                 margin-left: 1.5rem
+                @include mixins.mobile
+                    margin-left: 0.5rem
 
 
                 a
                     text-decoration: none
                     color: variables.$color-dark
-                    transition: 0.5s
                     border-bottom: 2px solid transparent 
+
                     &:hover
-                        color: variables.$border-menu
-                        border-bottom: 2px solid variables.$border-menu
-                        
+                        @include mixins.hover-text
 
                 .button__theme
                     width: 5rem
@@ -45,8 +61,27 @@
                     justify-content: center
                     align-items: center
 
+                    @include mixins.mobile
+                        width: 1.8rem
+                        height: 1.5rem
+                    @include mixins.tablet
+                        width: 2.0rem    
+
+                        
+
                     
                     .image__button
                         width: 1.2rem
                         height: 1.2rem     
-            
+                        
+                        @include mixins.mobile
+                            width: 0.9rem
+                            height: 0.9rem
+                        
+
+                    p
+                        @include mixins.mobile
+                            display: none
+                        @include mixins.tablet
+                            display: none
+
