@@ -4,20 +4,34 @@
 
 footer
 
+    
     .footer__container
         display: flex
         color: variables.$border-menu
         width: 1024px
 
-        p
-            font-size: 0.8rem    
+        @include mixins.mobile
+            @include mixins.collums
+        @include mixins.tablet
+            @include mixins.collums
+        @include mixins.notepad
+            width: 100vw    
 
+                 
+
+        p
+            font-size: 0.8rem
+
+        
         .footer__logo
             width: 7rem
 
         .footer__info
             width: 180px
-        
+            @include mixins.mobile
+                margin-bottom: 1rem
+            @include mixins.tablet
+                margin-bottom: 1rem    
 
             .footer__info--icons
                 display: inline-flex
@@ -30,4 +44,8 @@ footer
                     margin-right: 0.5rem
                     font-size: 1.1rem
 
+    .footer__text      
+        text-align: center
+        
+            
                 
