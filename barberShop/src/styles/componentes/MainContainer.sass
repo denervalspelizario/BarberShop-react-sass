@@ -5,12 +5,26 @@
     margin: 100px auto
     text-align: center 
     width: 1024px   
+    
+    @include mixins.mobile
+        @include mixins.collums
+    @include mixins.tablet
+        @include mixins.collums
+    @include mixins.notepad
+        width: 100vw    
+
+
 
     h2
         font-size: 2rem
     .main__text--bold
         font-weight: bold
         padding: 1.5rem 0
+    p
+        @include mixins.mobile
+            width: 90vw    
+        @include mixins.tablet
+            width: 90vw    
 
     .main__text--style
         font-family: variables.$font-styles
@@ -22,11 +36,21 @@
         display: flex
         justify-content: center
 
+        @include mixins.mobile
+            @include mixins.collums
+        @include mixins.tablet
+            @include mixins.collums    
 
         .card__services
             @include mixins.card-style
             cursor: pointer
-            
+
+            @include mixins.mobile
+                margin-bottom: 1rem
+                width: 350px
+            @include mixins.tablet
+                margin-bottom: 1rem
+                width: 450px
 
             
             &:hover
@@ -43,12 +67,28 @@
             img
                 width: 200px
                 height: 150px
+                @include mixins.mobile
+                    width: 300px
+                    height: 200px
+                @include mixins.tablet
+                    width: 400px
+                    height: 200px    
+
                 
                 
             h3
                 margin-top: 1rem
                 font-size: 2rem   
                 font-family: variables.$font-styles 
+                @include mixins.mobile
+                    margin-top: 0.2rem
+                @include mixins.tablet
+                    margin-top: 0.2rem
+            p
+                width: 250px
+                @include mixins.mobile
+                    width: 350px
+                    
 
                 
                     
