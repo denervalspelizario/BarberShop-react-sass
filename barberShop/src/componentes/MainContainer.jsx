@@ -3,7 +3,7 @@ import '../styles/componentes/MainContainer.sass'
 
 function MainContainer()  {
   return (
-    <article className='main__container'>
+      <article className='main__container'>
         <h2>Bem-vindo a Barber Shop</h2>
         <p className='main__text--bold'>Nossa barbearia sempre oferece profissionais de qualidade e estamos prontos para lidar com suas maiores expectativas.</p>
         <p>Nossos serviços são dedicados ao seu sucesso pessoa. Aqui temos uma equipe premiada que demonstrou o talento  de mestres barbeiros em vários concursos
@@ -27,7 +27,7 @@ function MainContainer()  {
                 <p>R$180,00</p>
             </div>         
         </section>
-    </article>
+      </article>
   )
 }
 

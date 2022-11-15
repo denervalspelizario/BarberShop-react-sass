@@ -4,8 +4,9 @@
     
 .header__container
     width: 1024px
+    margin: 0 auto
     display: flex 
-    justify-content: space-evenly
+    justify-content: space-between
 
     @include mixins.mobile
         @include mixins.collums
@@ -28,6 +29,7 @@
             border-top: 2px solid variables.$border-menu
             padding-top: 0
             padding-bottom: 0.5rem
+            padding-left: 0.8rem
             width: 90vw
         
         ul
@@ -45,43 +47,8 @@
 
                 a
                     text-decoration: none
-                    color: variables.$color-dark
                     border-bottom: 2px solid transparent 
 
                     &:hover
                         @include mixins.hover-text
-
-                .button__theme
-                    width: 5rem
-                    height: 2rem    
-                    border: 2px solid variables.$border-menu
-                    border-radius: 1.5rem
-                    cursor: pointer
-                    display: flex
-                    justify-content: center
-                    align-items: center
-
-                    @include mixins.mobile
-                        width: 1.8rem
-                        height: 1.5rem
-                    @include mixins.tablet
-                        width: 2.0rem    
-
-                        
-
-                    
-                    .image__button
-                        width: 1.2rem
-                        height: 1.2rem     
-                        
-                        @include mixins.mobile
-                            width: 0.9rem
-                            height: 0.9rem
-                        
-
-                    p
-                        @include mixins.mobile
-                            display: none
-                        @include mixins.tablet
-                            display: none
 

@@ -1,6 +1,9 @@
 @use '../mixins'
 @use '../variables'
 
+
+
+
 .main__container
     margin: 100px auto
     text-align: center 
@@ -11,7 +14,7 @@
     @include mixins.tablet
         @include mixins.collums
     @include mixins.notepad
-        width: 100vw    
+        width: 90vw    
 
 
 
@@ -30,11 +33,13 @@
         font-family: variables.$font-styles
         color: variables.$border-menu    
         font-size: 3rem
-        margin: 2rem
+        margin: 2rem 0
 
     .container__services
         display: flex
-        justify-content: center
+        justify-content: space-between
+        
+        
 
         @include mixins.mobile
             @include mixins.collums
@@ -44,6 +49,7 @@
         .card__services
             @include mixins.card-style
             cursor: pointer
+            
 
             @include mixins.mobile
                 margin-bottom: 1rem
@@ -87,7 +93,9 @@
             p
                 width: 250px
                 @include mixins.mobile
-                    width: 350px
+                    width: 100%
+                @include mixins.tablet
+                    width: 100%    
                     
 
                 

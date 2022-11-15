@@ -1,3 +1,63 @@
 @use './variables'
 @use './mixins'
     
+.light__mode
+    background-color: variables.$color-dark
+    color: variables.$color-light
+    border: 2px solid variables.$border-menu
+     
+    a
+        color: variables.$color-light  
+
+.dark__mode
+    background-color: variables.$color-light
+    color: variables.$color-dark
+    a
+        color: variables.$color-text    
+
+aside
+    margin: 0 auto
+    width: 1024px
+    padding: 10px 10px 0px 0px  
+    display: flex
+    justify-content: right
+
+    @include mixins.mobile
+        padding-right: 10px  
+        width: 90vw
+    @include mixins.tablet
+        width: 90vw
+        padding-right: 10px
+    @include mixins.notepad    
+        width: 90vw
+        
+        
+    button
+        width: 4.5rem
+        height: 2rem    
+        border: 2px solid variables.$color-dark
+        border-radius: 1.5rem
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+
+        @include mixins.mobile
+            width: 4.0rem
+        
+        @include mixins.tablet
+            width: 4.0rem  
+              
+
+        .image__button
+            width: 1.2rem
+            height: 1.2rem
+            margin-right: 0.3rem     
+                        
+            @include mixins.mobile
+                margin-right: 0 
+            @include mixins.tablet
+                margin-right: 0            
+
+
+       

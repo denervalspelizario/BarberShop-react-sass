@@ -9,7 +9,7 @@
     transition: .6s
 
 @mixin collums
-    width: 100vw
+    width: 90vw
     flex-direction: column
     justify-content: center
     align-items: center  
@@ -39,17 +39,17 @@
 
 
 @mixin mobile
-    @media (max-width: 499px)
-        @content                        
-
+    @media (max-width: 500px)
+        @content               
+                         
 // Tablet
 
 @mixin tablet
-    @media (min-width: 500px) and (max-width: 800px)
+    @media (min-width: 501px) and (max-width: 850px)
         @content                        
 
 // Notepad
 @mixin  notepad
-    @media (min-width: 801px) and (max-width: 1200px)
+    @media (min-width: 851px) and (max-width: 1200px)
         @content      
 
