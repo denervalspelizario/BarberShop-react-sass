@@ -1,6 +1,7 @@
 import Header from './componentes/Header';
 import Banner from './componentes/Banner';
 import MainContainer from './componentes/MainContainer';
+import Estructure from './componentes/Estructure';
 import Footer from './componentes/Footer';
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <Banner />
         <MainContainer />
+        <Estructure />
         <Footer />
       </div>
     </div>
