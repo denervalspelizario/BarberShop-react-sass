@@ -11,14 +11,14 @@ function Header()  {
             <img src="/img/barbearia-logo.png" alt="logo da barbershop" title='BarberShop' className='image__logo'/>
             <nav className='nav__menu'>
               <ul class="menu__dropdown">
-                <li class="menu__dropdown__item">
-                  <a href="" class="menu__dropdown__link">Sobre</a>
+              <li class="menu__dropdown__item">
+                  <a href="#sobre" class="menu__dropdown__link">Sobre</a>
                 </li>
                 <li class="menu__dropdown__item">
-                  <a href="" class="menu__dropdown__link">Contato</a>
+                  <a href="#contato" class="menu__dropdown__link">Contato</a>
                 </li>
                 <li class="menu__dropdown__item">
-                  <a href="" class="menu__dropdown__link">Unidades</a>
+                  <a href="#estrutura" class="menu__dropdown__link">Estrutura</a>
                 </li>
                 <li class="menu__dropdown__item">
                   <a href="" class="menu__dropdown__link">Sociais</a>

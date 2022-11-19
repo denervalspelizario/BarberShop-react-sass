@@ -5,7 +5,7 @@ import '../styles/componentes/Footer.sass'
 function Footer()  {
   return (
     <footer>
-      <div className='footer__container'>
+      <div className='footer__container' id='contato'>
         <img  className='footer__logo' src="/img/barbearia-logo.png" alt="logo barbearia"  title='BarberShop'/>
         <div className='footer__info'>
           <h3>Endereço</h3> 
@@ -37,7 +37,6 @@ function Footer()  {
           </div>
         </div>
       </div>
-      <p className='footer__text'>Barbershop desenvolvida por "D S Pelizario"</p>
     </footer>
   )
 }

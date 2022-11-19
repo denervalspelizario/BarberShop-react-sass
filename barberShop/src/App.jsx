@@ -2,6 +2,7 @@ import Header from './componentes/Header';
 import Banner from './componentes/Banner';
 import MainContainer from './componentes/MainContainer';
 import Estructure from './componentes/Estructure';
+import Newsletter from './componentes/Newsletter';
 import Footer from './componentes/Footer';
 import { useState } from "react";
 
@@ -28,6 +29,7 @@ function App() {
         <Banner />
         <MainContainer />
         <Estructure />
+        <Newsletter />
         <Footer />
       </div>
     </div>

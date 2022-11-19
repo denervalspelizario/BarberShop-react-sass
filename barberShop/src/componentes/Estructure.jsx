@@ -26,7 +26,7 @@ function Estructure()  {
   
   
   return (
-    <section className='estrutura__container'>
+    <section className='estrutura__container' id='estrutura'>
         <div className='estrutura__text'>
             <h3>Estrutura </h3>
             <p>
