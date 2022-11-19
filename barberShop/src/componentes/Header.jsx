@@ -21,7 +21,7 @@ function Header()  {
                   <a href="" class="menu__dropdown__link">Unidades</a>
                 </li>
                 <li class="menu__dropdown__item">
-                  <a href="" class="menu__dropdown__link">Redes Sociais</a>
+                  <a href="" class="menu__dropdown__link">Sociais</a>
                   <ul class="submenu__dropdown">
                   <li class="submenu__dropdown--item">
                     <a href="" class='submenu__dropdown--link'>

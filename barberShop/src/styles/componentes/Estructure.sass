@@ -6,6 +6,12 @@
     width: 1024px
     margin: 0 auto
     text-align: center
+    @include mixins.mobile
+        @include mixins.collums
+    @include mixins.tablet
+        @include mixins.collums
+    @include mixins.notepad
+        width: 90vw    
 
     .estrutura__text
         text-align: center
@@ -14,8 +20,7 @@
             font-size: 2rem
             margin-bottom: 1rem
 
-        p
-            
+        
 
     .carousel__container
         width: 100%
