@@ -35,68 +35,18 @@
         font-size: 3rem
         margin: 2rem 0
 
-    .container__services
-        display: flex
-        justify-content: space-between
-        
-        
+    .servico__container
+        display: flex    
+        justify-content: space-between    
 
         @include mixins.mobile
             @include mixins.collums
         @include mixins.tablet
-            @include mixins.collums    
-
-        .card__services
-            @include mixins.card-style
-            cursor: pointer
-            
-
-            @include mixins.mobile
-                margin-bottom: 1rem
-                width: 350px
-            @include mixins.tablet
-                margin-bottom: 1rem
-                width: 450px
-
-            
-            &:hover
-                border: 1px solid variables.$border-menu
-                
-                h3
-                    color: variables.$border-menu
-                    transition: .3s
-
-                p
-                    color: variables.$border-menu           
-                    transition: .3s
-
-            img
-                width: 200px
-                height: 150px
-                @include mixins.mobile
-                    width: 300px
-                    height: 200px
-                @include mixins.tablet
-                    width: 400px
-                    height: 200px    
+            @include mixins.collums  
+    
 
                 
-                
-            h3
-                margin-top: 1rem
-                font-size: 2rem   
-                font-family: variables.$font-styles 
-                @include mixins.mobile
-                    margin-top: 0.2rem
-                @include mixins.tablet
-                    margin-top: 0.2rem
-            p
-                width: 250px
-                @include mixins.mobile
-                    width: 100%
-                @include mixins.tablet
-                    width: 100%    
-                    
+             
 
                 
                     

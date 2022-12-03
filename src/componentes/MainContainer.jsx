@@ -1,7 +1,22 @@
 import React from 'react'
+import Cards from './Cards';
+import ProdutoImage from '/img/cabelo.jpg';
+import ProdutoImage2 from '/img/barba.jpg';
+import ProdutoImage3 from '/img/lavaseca.jpg';
+
 import '../styles/componentes/MainContainer.sass'
 
-function MainContainer()  {
+function MainContainer(props)  {
+
+  const servicos = [
+    {id: 1, produto: 'Corte', preco: '80,00', foto: ProdutoImage},
+    {id: 2, produto: 'Barba', preco: '60,00', foto: ProdutoImage2},
+    {id: 3, produto: 'Corte & Barba', preco: '110,00', foto: ProdutoImage3},
+  ]
+
+
+
+
   return (
       <article className='main__container' id='sobre'>
         <h2>Bem-vindo a Barber Shop</h2>
@@ -10,23 +25,12 @@ function MainContainer()  {
           de estilo. Deixe nosso barbeiro ser seu estilista pessoal e você nunca ficará desapontado. 
         </p>
         <p className='main__text--style'>S. Kelly</p>
-        <section className='container__services'>
-            <div className='card__services'>
-                <img src="/img/barba.jpg" alt="profissional aparando a barba do cliente"  title='BarberShop'/>
-                <h3>Barba</h3>
-                <p>R$50,00</p>
-            </div>
-            <div className='card__services'>
-                <img src="/img/cabelo.jpg" alt="profissional cortando cabelo do cliente" title='BarberShop'/>
-                <h3>Cabelo</h3>
-                <p>R$130,00</p>
-            </div>            
-            <div className='card__services'>
-                <img src="/img/lavaseca.jpg" alt="profissional secando o cabelo do cliente" title='BarberShop'/>
-                <h3>Barba + Cabelo</h3>
-                <p>R$180,00</p>
-            </div>         
-        </section>
+        <div className='servico__container'>
+          {servicos.map((servico) => (
+          <Cards  subTitle={servico.produto} text={servico.preco} imagem={servico.foto} />
+          ))}          
+        </div>
+        
       </article>
   )
 }

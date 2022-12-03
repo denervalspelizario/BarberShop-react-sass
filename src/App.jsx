@@ -4,6 +4,7 @@ import MainContainer from './componentes/MainContainer';
 import Estructure from './componentes/Estructure';
 import Newsletter from './componentes/Newsletter';
 import Footer from './componentes/Footer';
+
 import { useState } from "react";
 
 import './styles/App.sass';
@@ -14,7 +15,6 @@ function App() {
   const alterTheme = () => {
     setDarkmode(!darkmode);
   }
-
 
   return (
     <div className={darkmode ? 'dark__mode' : 'light__mode' }>

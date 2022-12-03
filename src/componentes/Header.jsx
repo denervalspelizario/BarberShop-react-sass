@@ -21,25 +21,25 @@ function Header()  {
                   <a href="#estrutura" class="menu__dropdown__link">Estrutura</a>
                 </li>
                 <li class="menu__dropdown__item">
-                  <a href="" class="menu__dropdown__link">Sociais</a>
+                  <a href="#" class="menu__dropdown__link">Sociais</a>
                   <ul class="submenu__dropdown">
                   <li class="submenu__dropdown--item">
-                    <a href="" class='submenu__dropdown--link'>
+                    <a href="#" class='submenu__dropdown--link'>
                       <i class="fa-brands fa-facebook"></i>
                     </a> 
                   </li>
                   <li class="submenu__dropdown--item">
-                    <a href="" class='submenu__dropdown--link'>
+                    <a href="#" class='submenu__dropdown--link'>
                       <i class="fa-brands fa-instagram"></i>
                     </a> 
                   </li>
                   <li class="submenu__dropdown--item">
-                    <a href="" class='submenu__dropdown--link'>
+                    <a href="#" class='submenu__dropdown--link'>
                       <i class="fa-brands fa-twitter"></i>
                     </a> 
                   </li>
                   <li class="submenu__dropdown--item">
-                    <a href="" class='submenu__dropdown--link'>
+                    <a href="#" class='submenu__dropdown--link'>
                       <i class="fa-brands fa-whatsapp"></i>
                     </a> 
                   </li>
